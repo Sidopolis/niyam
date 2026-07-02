@@ -18,7 +18,7 @@
 
 <p align="center">
   <img src="https://img.shields.io/npm/v/niyam?style=flat-square&color=1a1a2e" alt="npm version" />
-  <img src="https://img.shields.io/github/stars/niyam-rules/niyam?style=flat-square&color=1a1a2e" alt="stars" />
+  <img src="https://img.shields.io/github/stars/Sidopolis/niyam?style=flat-square&color=1a1a2e" alt="stars" />
   <img src="https://img.shields.io/badge/license-MIT-1a1a2e?style=flat-square" alt="license" />
   <img src="https://img.shields.io/badge/rules-150%2B-1a1a2e?style=flat-square" alt="rules" />
 </p>
@@ -257,7 +257,7 @@ We welcome contributions! See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
 
 ## License
 
-MIT © [Niyam Contributors](https://github.com/niyam-rules/niyam)
+MIT © [Niyam Contributors](https://github.com/Sidopolis/niyam)
 
 ---
 

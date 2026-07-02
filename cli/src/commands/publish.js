@@ -73,7 +73,7 @@ ${c.bold}  To submit to the registry:${c.reset}
          "version": "${pack.version}",
          "author": "${pack.author}",
          "description": "${pack.description}",
-         "url": "https://raw.githubusercontent.com/niyam-rules/niyam/main/${pack.category}/${pack.id}/rules.md"
+         "url": "https://raw.githubusercontent.com/Sidopolis/niyam/main/${pack.category}/${pack.id}/rules.md"
        }${c.reset}
 
     ${c.dim}3.${c.reset} Open a Pull Request to ${c.cyan}niyam-rules/registry${c.reset}

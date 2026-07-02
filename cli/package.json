@@ -24,11 +24,11 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/niyam-rules/niyam"
+    "url": "https://github.com/Sidopolis/niyam"
   },
   "homepage": "https://niyam.dev",
   "bugs": {
-    "url": "https://github.com/niyam-rules/niyam/issues"
+    "url": "https://github.com/Sidopolis/niyam/issues"
   },
   "publishConfig": {
     "access": "public"

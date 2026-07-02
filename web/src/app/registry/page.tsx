@@ -54,7 +54,7 @@ export default function RegistryPage() {
           <div className="flex items-center gap-6 text-sm text-zinc-400">
             <a href="/rules" className="hover:text-white transition-colors">Browse Rules</a>
             <a href="/registry" className="text-white">Registry</a>
-            <a href="https://github.com/niyam-rules/niyam" className="hover:text-white transition-colors">GitHub</a>
+            <a href="https://github.com/Sidopolis/niyam" className="hover:text-white transition-colors">GitHub</a>
           </div>
         </div>
       </nav>

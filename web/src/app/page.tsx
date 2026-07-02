@@ -64,7 +64,7 @@ function Navbar() {
           <a href="#templates" className="hover:text-white transition-colors">Templates</a>
         </div>
         <a
-          href="https://github.com/niyam-rules/niyam"
+          href="https://github.com/Sidopolis/niyam"
           className="rounded-lg bg-white px-4 py-2 text-sm font-medium text-black hover:bg-zinc-200 transition-colors"
         >
           Get Started
@@ -84,7 +84,7 @@ function HeroSection() {
         transition={{ delay: 0.3, duration: 0.8, ease: "easeInOut" }}
         className="relative z-10 flex flex-col items-center text-center px-6"
       >
-          <Badge text="v0.1 just shipped. 50 rule modules, live MCP server." href="https://github.com/niyam-rules/niyam" />
+          <Badge text="v0.1 just shipped. 50 rule modules, live MCP server." href="https://github.com/Sidopolis/niyam" />
           <h1 className="mt-6 bg-gradient-to-b from-white to-zinc-400 bg-clip-text text-5xl md:text-7xl font-bold tracking-tight text-transparent leading-tight">
             Stop dumping 500 lines
             <br />
@@ -538,7 +538,7 @@ function CTASection() {
         <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
           <CopyCommand text="npx niyam init" />
           <a
-            href="https://github.com/niyam-rules/niyam"
+            href="https://github.com/Sidopolis/niyam"
             className="rounded-lg border border-white/10 px-6 py-3 text-sm font-medium text-zinc-300 hover:bg-white/5 transition-colors"
           >
             ★ Star on GitHub
@@ -561,7 +561,7 @@ function Footer() {
           <span>Made in India 🇮🇳</span>
         </div>
         <div className="flex items-center gap-6 text-sm text-zinc-500">
-          <a href="https://github.com/niyam-rules/niyam" className="hover:text-white transition-colors">GitHub</a>
+          <a href="https://github.com/Sidopolis/niyam" className="hover:text-white transition-colors">GitHub</a>
           <a href="#" className="hover:text-white transition-colors">Docs</a>
           <a href="#" className="hover:text-white transition-colors">Discord</a>
         </div>
