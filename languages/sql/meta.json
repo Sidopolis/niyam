@@ -1,0 +1,6 @@
+{
+  "name": "SQL",
+  "description": "SQL rules: query optimization, indexing strategies, joins, CTEs, window functions, transactions, and migration best practices",
+  "tags": ["sql", "database", "queries", "indexing", "optimization", "migrations", "postgres", "mysql"],
+  "version": "1.0.0"
+}

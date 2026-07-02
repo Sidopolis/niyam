@@ -1,0 +1,6 @@
+{
+  "name": "QA/Test Engineer",
+  "description": "Designs test strategies, writes automation frameworks, catches edge cases, and ensures software quality through systematic verification",
+  "tags": ["testing", "qa", "automation", "regression", "load-testing", "edge-cases", "bug-reports", "ci"],
+  "version": "1.0.0"
+}

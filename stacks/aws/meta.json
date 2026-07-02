@@ -1,0 +1,7 @@
+{
+  "name": "AWS",
+  "description": "Rules for AWS with Lambda, DynamoDB, S3, CDK/Terraform, IAM least privilege, CloudWatch, and cost optimization",
+  "tags": ["cloud", "infrastructure", "serverless", "devops", "iaas"],
+  "version": "1.0.0",
+  "detectedBy": ["cdk.json", "samconfig.toml", "template.yaml", "serverless.yml", "package.json:aws-cdk-lib", "*.tf"]
+}

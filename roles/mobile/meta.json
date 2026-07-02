@@ -1,0 +1,6 @@
+{
+  "name": "Mobile Developer",
+  "description": "Builds cross-platform mobile apps with offline-first architecture, native performance, and platform compliance",
+  "tags": ["mobile", "react-native", "flutter", "offline-first", "ios", "android", "push-notifications", "deep-linking"],
+  "version": "1.0.0"
+}

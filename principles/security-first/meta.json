@@ -1,0 +1,6 @@
+{
+  "name": "Security First",
+  "description": "OWASP and Zero Trust security principles: validate everything, trust nothing, defend in depth",
+  "tags": ["security", "owasp", "zero-trust", "authentication", "authorization", "input-validation"],
+  "version": "1.0.0"
+}

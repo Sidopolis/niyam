@@ -1,0 +1,7 @@
+{
+  "name": "Tailwind CSS",
+  "description": "Rules for Tailwind CSS 4+ with utility-first patterns, design tokens, and responsive design",
+  "tags": ["css", "styling", "frontend", "design-system", "utility-first"],
+  "version": "1.0.0",
+  "detectedBy": ["tailwind.config.js", "tailwind.config.ts", "package.json:tailwindcss", "postcss.config.js"]
+}

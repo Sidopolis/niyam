@@ -1,0 +1,7 @@
+{
+  "name": "Django",
+  "description": "Rules for Django 5+ with ORM best practices, DRF, Celery, and security",
+  "tags": ["backend", "python", "orm", "rest-api", "fullstack"],
+  "version": "1.0.0",
+  "detectedBy": ["manage.py", "settings.py", "package:django", "wsgi.py", "asgi.py"]
+}

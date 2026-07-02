@@ -1,0 +1,6 @@
+{
+  "name": "Performance",
+  "description": "Brendan Gregg's methodology and Core Web Vitals: measure, profile, optimize the bottleneck",
+  "tags": ["performance", "core-web-vitals", "profiling", "caching", "optimization"],
+  "version": "1.0.0"
+}

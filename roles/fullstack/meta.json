@@ -1,0 +1,6 @@
+{
+  "name": "Full-Stack Developer",
+  "description": "Delivers end-to-end features with unified API contracts, shared types, and seamless frontend-backend integration",
+  "tags": ["fullstack", "api-contracts", "monorepo", "ssr", "websocket", "migrations", "deployment", "shared-types"],
+  "version": "1.0.0"
+}

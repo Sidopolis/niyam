@@ -1,0 +1,6 @@
+{
+  "name": "Testing Strategy",
+  "description": "Test pyramid, isolation, fixtures, factories, and flaky test prevention for reliable suites",
+  "tags": ["testing", "test-pyramid", "unit-tests", "integration", "e2e", "test-isolation"],
+  "version": "1.0.0"
+}

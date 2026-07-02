@@ -1,0 +1,6 @@
+{
+  "name": "Backend Developer",
+  "description": "Designs and builds scalable, secure server-side systems with optimized APIs and data management",
+  "tags": ["backend", "api", "database", "auth", "caching", "microservices", "rest", "graphql"],
+  "version": "1.0.0"
+}

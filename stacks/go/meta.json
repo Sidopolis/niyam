@@ -1,0 +1,7 @@
+{
+  "name": "Go",
+  "description": "Rules for Go 1.22+ with error handling, interfaces, concurrency, and table-driven tests",
+  "tags": ["backend", "systems", "concurrency", "microservices", "cli"],
+  "version": "1.0.0",
+  "detectedBy": ["go.mod", "go.sum", "*.go"]
+}

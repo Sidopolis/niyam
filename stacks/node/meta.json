@@ -1,0 +1,7 @@
+{
+  "name": "Node.js",
+  "description": "Rules for Node.js 22+ with ESM, streams, worker threads, and security best practices",
+  "tags": ["backend", "runtime", "javascript", "api", "server"],
+  "version": "1.0.0",
+  "detectedBy": ["package.json", ".nvmrc", ".node-version", "node_modules/", "package.json:type:module"]
+}

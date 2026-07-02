@@ -1,0 +1,7 @@
+{
+  "name": "TypeScript",
+  "description": "Rules for TypeScript 5+ with strict mode, generics, discriminated unions, and branded types",
+  "tags": ["language", "typing", "frontend", "backend", "fullstack"],
+  "version": "1.0.0",
+  "detectedBy": ["tsconfig.json", "tsconfig.*.json", "*.ts", "*.tsx", "package.json:typescript"]
+}

@@ -1,0 +1,6 @@
+{
+  "name": "CI/CD Pipeline",
+  "description": "Pipeline stages, caching, parallel jobs, environment promotion, and deployment gates",
+  "tags": ["ci-cd", "pipeline", "deployment", "automation", "continuous-integration"],
+  "version": "1.0.0"
+}

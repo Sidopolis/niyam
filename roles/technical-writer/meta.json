@@ -1,0 +1,6 @@
+{
+  "name": "Technical Writer",
+  "description": "Creates clear API documentation, tutorials, changelogs, READMEs, and architecture decision records that developers actually read",
+  "tags": ["documentation", "api-docs", "tutorials", "changelog", "readme", "jsdoc", "tsdoc", "adr"],
+  "version": "1.0.0"
+}

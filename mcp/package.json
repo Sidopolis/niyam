@@ -1,0 +1,28 @@
+{
+  "name": "@niyam/mcp-server",
+  "version": "0.1.0",
+  "description": "MCP server that dynamically serves context-aware coding rules based on what file you're editing",
+  "type": "module",
+  "bin": {
+    "niyam-mcp": "./src/index.js"
+  },
+  "main": "./src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js"
+  },
+  "keywords": [
+    "mcp",
+    "niyam",
+    "ai-agent",
+    "rules",
+    "context-engineering"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.29.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

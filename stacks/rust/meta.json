@@ -1,0 +1,7 @@
+{
+  "name": "Rust",
+  "description": "Rules for Rust with ownership, error handling, async Tokio, traits, and cargo conventions",
+  "tags": ["systems", "backend", "performance", "safety", "async"],
+  "version": "1.0.0",
+  "detectedBy": ["Cargo.toml", "Cargo.lock", "*.rs", "src/main.rs", "src/lib.rs"]
+}

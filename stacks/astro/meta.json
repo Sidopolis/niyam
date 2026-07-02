@@ -1,0 +1,7 @@
+{
+  "name": "Astro",
+  "description": "Rules for Astro 5+ with content collections, islands architecture, view transitions, SSR/SSG, and integrations",
+  "tags": ["frontend", "ssg", "ssr", "framework", "content", "islands"],
+  "version": "1.0.0",
+  "detectedBy": ["astro.config.mjs", "astro.config.ts", "package.json:astro", "src/content/config.ts"]
+}

@@ -1,0 +1,6 @@
+{
+  "name": "Software Architect",
+  "description": "Designs scalable systems, manages technical trade-offs, documents decisions in ADRs, and guides teams through complexity",
+  "tags": ["architecture", "system-design", "scalability", "trade-offs", "tech-debt", "adr", "design-patterns", "distributed-systems"],
+  "version": "1.0.0"
+}

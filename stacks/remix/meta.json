@@ -1,0 +1,7 @@
+{
+  "name": "Remix",
+  "description": "Rules for Remix 2+ with loaders, actions, nested routes, error boundaries, streaming, and progressive enhancement",
+  "tags": ["fullstack", "react", "ssr", "framework", "web-standards"],
+  "version": "1.0.0",
+  "detectedBy": ["remix.config.js", "remix.config.ts", "package.json:@remix-run/node", "package.json:@remix-run/react", "app/root.tsx"]
+}

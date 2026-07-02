@@ -1,0 +1,7 @@
+{
+  "name": "Prisma",
+  "description": "Rules for Prisma ORM with schema design, relations, transactions, raw queries, migrations, and seeding",
+  "tags": ["orm", "database", "backend", "typescript", "migrations"],
+  "version": "1.0.0",
+  "detectedBy": ["prisma/schema.prisma", "package.json:prisma", "package.json:@prisma/client"]
+}

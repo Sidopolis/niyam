@@ -1,0 +1,6 @@
+{
+  "name": "Test-Driven Development",
+  "description": "Kent Beck's TDD principles: Red-Green-Refactor cycle adapted for AI-driven development",
+  "tags": ["tdd", "testing", "red-green-refactor", "test-first", "design"],
+  "version": "1.0.0"
+}

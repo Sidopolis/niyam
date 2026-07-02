@@ -1,0 +1,7 @@
+{
+  "name": "Vue",
+  "description": "Rules for Vue 3+ with Composition API, Pinia stores, composables, and Nuxt 3",
+  "tags": ["frontend", "ui", "framework", "composition-api", "typescript"],
+  "version": "1.0.0",
+  "detectedBy": ["package.json:vue", "*.vue", "nuxt.config.ts", "vite.config.ts:@vitejs/plugin-vue"]
+}

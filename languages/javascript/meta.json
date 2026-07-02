@@ -1,0 +1,6 @@
+{
+  "name": "JavaScript",
+  "description": "JavaScript-specific rules: closures, prototypes, event loop, WeakRef, async patterns, module systems, and runtime gotchas",
+  "tags": ["javascript", "js", "closures", "async", "event-loop", "modules", "es2024", "runtime"],
+  "version": "1.0.0"
+}

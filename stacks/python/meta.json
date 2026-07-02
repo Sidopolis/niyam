@@ -1,0 +1,7 @@
+{
+  "name": "Python",
+  "description": "Rules for Python 3.12+ with type hints, async, modern packaging, and pytest",
+  "tags": ["backend", "scripting", "data", "async", "typing"],
+  "version": "1.0.0",
+  "detectedBy": ["pyproject.toml", "setup.py", "requirements.txt", "*.py", ".python-version"]
+}

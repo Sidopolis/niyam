@@ -1,0 +1,6 @@
+{
+  "name": "AI-Generated Code Anti-Patterns",
+  "description": "Anti-patterns specific to AI-generated code: zombie comments, swallowed exceptions, as-any casts, dead imports, over-abstraction, hallucinated APIs, and copy-paste patterns",
+  "tags": ["anti-patterns", "ai-slop", "llm", "code-quality", "code-review", "ai-generated"],
+  "version": "1.0.0"
+}

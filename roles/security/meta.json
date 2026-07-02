@@ -1,0 +1,6 @@
+{
+  "name": "Security Engineer",
+  "description": "Identifies and mitigates security vulnerabilities through threat modeling, secure coding, and defense-in-depth",
+  "tags": ["security", "owasp", "encryption", "auth", "threat-modeling", "csp", "cors", "audit"],
+  "version": "1.0.0"
+}

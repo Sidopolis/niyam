@@ -1,0 +1,6 @@
+{
+  "name": "Git Workflow",
+  "description": "Conventional commits, branch naming, PR discipline, and automation hooks for clean history",
+  "tags": ["git", "version-control", "conventional-commits", "branching", "pull-requests"],
+  "version": "1.0.0"
+}

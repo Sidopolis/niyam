@@ -1,0 +1,7 @@
+{
+  "name": "Laravel",
+  "description": "Rules for Laravel 11+ with Eloquent, Blade components, queues, events, and Pest testing",
+  "tags": ["backend", "php", "fullstack", "orm", "framework"],
+  "version": "1.0.0",
+  "detectedBy": ["composer.json:laravel/framework", "artisan", "app/Http/Kernel.php", "routes/web.php"]
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Solo Dev",
+  "description": "Ship fast alone. Full-stack mindset, clean code, minimal process.",
+  "stacks": ["typescript", "nextjs", "tailwind"],
+  "roles": ["fullstack"],
+  "principles": ["clean-code", "performance"],
+  "workflows": ["git", "testing"],
+  "tags": ["solo", "indie", "fast", "minimal"]
+}

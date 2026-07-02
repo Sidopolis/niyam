@@ -1,0 +1,6 @@
+{
+  "name": "DevOps Engineer",
+  "description": "Builds reliable CI/CD pipelines, infrastructure as code, and observability systems for production excellence",
+  "tags": ["devops", "ci-cd", "kubernetes", "docker", "terraform", "monitoring", "infrastructure", "deployment"],
+  "version": "1.0.0"
+}

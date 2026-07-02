@@ -1,0 +1,6 @@
+{
+  "name": "Accessibility",
+  "description": "WCAG 2.2 AA compliance: semantic HTML, ARIA, keyboard navigation, and inclusive design",
+  "tags": ["accessibility", "a11y", "wcag", "aria", "keyboard-navigation", "screen-reader"],
+  "version": "1.0.0"
+}

@@ -1,0 +1,7 @@
+{
+  "name": "Next.js",
+  "description": "Rules for Next.js 15+ App Router with Server Components, Server Actions, and caching strategies",
+  "tags": ["frontend", "fullstack", "ssr", "react", "framework"],
+  "version": "1.0.0",
+  "detectedBy": ["next.config.js", "next.config.mjs", "next.config.ts", "package.json:next", "app/layout.tsx"]
+}

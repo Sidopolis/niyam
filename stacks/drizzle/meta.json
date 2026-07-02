@@ -1,0 +1,7 @@
+{
+  "name": "Drizzle ORM",
+  "description": "Rules for Drizzle ORM with schema definition, queries, relations, migrations, type safety, and transactions",
+  "tags": ["orm", "database", "backend", "typescript", "sql"],
+  "version": "1.0.0",
+  "detectedBy": ["drizzle.config.ts", "drizzle.config.js", "package.json:drizzle-orm", "package.json:drizzle-kit"]
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Open Source",
+  "description": "Community-friendly. Accessibility, documentation, testing, CI/CD.",
+  "stacks": ["typescript"],
+  "roles": ["fullstack"],
+  "principles": ["clean-code", "tdd", "accessibility"],
+  "workflows": ["git", "ci-cd", "testing", "code-review"],
+  "tags": ["oss", "community", "documentation", "inclusive"]
+}

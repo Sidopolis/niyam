@@ -1,0 +1,7 @@
+{
+  "name": "Flutter",
+  "description": "Rules for Flutter 3+ with widget composition, Riverpod/Bloc state management, and go_router",
+  "tags": ["mobile", "cross-platform", "dart", "ui", "ios", "android"],
+  "version": "1.0.0",
+  "detectedBy": ["pubspec.yaml", "pubspec.lock", "*.dart", "lib/main.dart", "android/", "ios/"]
+}

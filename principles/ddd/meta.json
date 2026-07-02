@@ -1,0 +1,6 @@
+{
+  "name": "Domain-Driven Design",
+  "description": "Eric Evans' DDD principles: bounded contexts, aggregates, and ubiquitous language for complex domains",
+  "tags": ["ddd", "domain-driven-design", "bounded-context", "aggregates", "architecture"],
+  "version": "1.0.0"
+}

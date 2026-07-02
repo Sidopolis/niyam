@@ -1,0 +1,7 @@
+{
+  "name": "Angular",
+  "description": "Rules for Angular 18+ with signals, standalone components, new control flow, and NgRx",
+  "tags": ["frontend", "framework", "typescript", "spa", "enterprise"],
+  "version": "1.0.0",
+  "detectedBy": ["angular.json", "package.json:@angular/core", "*.component.ts", "app.config.ts"]
+}

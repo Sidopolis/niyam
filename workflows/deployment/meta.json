@@ -1,0 +1,6 @@
+{
+  "name": "Deployment",
+  "description": "Blue-green, canary, feature flags, zero-downtime deployments, and incident response",
+  "tags": ["deployment", "blue-green", "canary", "feature-flags", "zero-downtime", "rollback"],
+  "version": "1.0.0"
+}

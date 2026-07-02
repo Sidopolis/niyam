@@ -1,0 +1,39 @@
+{
+  "name": "niyam",
+  "version": "0.1.0",
+  "description": "Modular AI agent rules that compose, not bloat.",
+  "bin": {
+    "niyam": "./src/index.js"
+  },
+  "type": "module",
+  "files": [
+    "src/",
+    "../stacks/",
+    "../roles/",
+    "../principles/",
+    "../workflows/",
+    "../anti-patterns/",
+    "../languages/",
+    "../templates/"
+  ],
+  "keywords": [
+    "ai", "agents", "rules", "cursor", "claude", "kiro",
+    "copilot", "agents-md", "cursorrules", "coding-agent"
+  ],
+  "author": "Niyam Contributors",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/niyam-rules/niyam"
+  },
+  "homepage": "https://niyam.dev",
+  "bugs": {
+    "url": "https://github.com/niyam-rules/niyam/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

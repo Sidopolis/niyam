@@ -1,0 +1,6 @@
+{
+  "name": "Data Engineer",
+  "description": "Designs and builds reliable data pipelines, models, and governance systems for analytics and decision-making",
+  "tags": ["data", "etl", "sql", "pipeline", "data-quality", "dbt", "airflow", "data-modeling"],
+  "version": "1.0.0"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Startup SaaS",
+  "description": "Move fast, ship daily. React + Node + TypeScript + TDD + Performance.",
+  "stacks": ["react", "nextjs", "typescript", "tailwind", "node"],
+  "roles": ["fullstack"],
+  "principles": ["clean-code", "tdd", "performance"],
+  "workflows": ["git", "ci-cd", "testing"],
+  "tags": ["startup", "saas", "fast", "modern"]
+}

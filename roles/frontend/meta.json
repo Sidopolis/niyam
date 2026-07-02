@@ -1,0 +1,6 @@
+{
+  "name": "Frontend Developer",
+  "description": "Builds performant, accessible, and responsive user interfaces with component-driven architecture",
+  "tags": ["frontend", "accessibility", "performance", "components", "css", "responsive", "wcag", "core-web-vitals"],
+  "version": "1.0.0"
+}

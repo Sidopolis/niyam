@@ -1,0 +1,6 @@
+{
+  "name": "Common Anti-Patterns",
+  "description": "Universal code anti-patterns to detect and avoid: over-engineering, premature optimization, god objects, callback hell, magic numbers, and stringly-typed code",
+  "tags": ["anti-patterns", "code-smells", "refactoring", "clean-code", "design", "universal"],
+  "version": "1.0.0"
+}

@@ -1,0 +1,7 @@
+{
+  "name": "FastAPI",
+  "description": "Rules for FastAPI with async routes, Pydantic v2, dependency injection, and WebSocket",
+  "tags": ["backend", "python", "async", "rest-api", "pydantic"],
+  "version": "1.0.0",
+  "detectedBy": ["package:fastapi", "package:uvicorn", "main.py:FastAPI", "requirements.txt:fastapi"]
+}

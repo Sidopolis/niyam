@@ -1,0 +1,7 @@
+{
+  "name": "Supabase",
+  "description": "Rules for Supabase with Auth, RLS policies, realtime subscriptions, edge functions, storage, and database types",
+  "tags": ["backend", "database", "auth", "realtime", "baas", "postgres"],
+  "version": "1.0.0",
+  "detectedBy": ["supabase/config.toml", "package.json:@supabase/supabase-js", "supabase/.gitignore"]
+}

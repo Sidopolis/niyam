@@ -1,0 +1,7 @@
+{
+  "name": "Docker",
+  "description": "Rules for Docker with multi-stage builds, layer caching, .dockerignore, compose, health checks, and security scanning",
+  "tags": ["devops", "containers", "infrastructure", "deployment", "ci-cd"],
+  "version": "1.0.0",
+  "detectedBy": ["Dockerfile", "docker-compose.yml", "docker-compose.yaml", "compose.yml", "compose.yaml", ".dockerignore"]
+}

@@ -1,0 +1,6 @@
+{
+  "name": "AI/ML Engineer",
+  "description": "Integrates AI models, designs RAG pipelines, engineers prompts, evaluates outputs, and optimizes cost while maintaining safety guardrails",
+  "tags": ["ai", "ml", "llm", "rag", "embeddings", "prompt-engineering", "fine-tuning", "evaluation", "guardrails"],
+  "version": "1.0.0"
+}

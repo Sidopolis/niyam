@@ -1,0 +1,7 @@
+{
+  "name": "React",
+  "description": "Rules for React 19+ with hooks, Server Components, performance patterns, and accessibility",
+  "tags": ["frontend", "ui", "components", "hooks", "javascript", "typescript"],
+  "version": "1.0.0",
+  "detectedBy": ["package.json:react", "package.json:react-dom", "*.tsx", "*.jsx"]
+}

@@ -1,0 +1,6 @@
+{
+  "name": "Code Review",
+  "description": "Review checklist, feedback style, PR discipline, and automated quality gates",
+  "tags": ["code-review", "pull-requests", "feedback", "quality", "collaboration"],
+  "version": "1.0.0"
+}

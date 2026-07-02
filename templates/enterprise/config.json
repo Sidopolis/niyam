@@ -1,0 +1,9 @@
+{
+  "name": "Enterprise",
+  "description": "Security-first, DDD, comprehensive testing, strict CI/CD gates.",
+  "stacks": ["typescript", "node", "react"],
+  "roles": ["backend", "security"],
+  "principles": ["security-first", "ddd", "clean-code", "accessibility"],
+  "workflows": ["git", "ci-cd", "testing", "deployment", "code-review"],
+  "tags": ["enterprise", "security", "compliance", "scalable"]
+}

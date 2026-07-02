@@ -1,0 +1,7 @@
+{
+  "name": "Svelte",
+  "description": "Rules for Svelte 5+ with runes, SvelteKit, load functions, and form actions",
+  "tags": ["frontend", "ui", "framework", "ssr", "compiler"],
+  "version": "1.0.0",
+  "detectedBy": ["svelte.config.js", "package.json:svelte", "*.svelte", "src/routes/+page.svelte"]
+}

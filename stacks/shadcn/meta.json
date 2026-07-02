@@ -1,0 +1,7 @@
+{
+  "name": "shadcn/ui",
+  "description": "Rules for shadcn/ui with component installation, customization, theming, accessibility, compound components, and variants",
+  "tags": ["ui", "components", "frontend", "design-system", "radix", "tailwind"],
+  "version": "1.0.0",
+  "detectedBy": ["components.json", "components/ui/button.tsx", "package.json:@radix-ui/react-slot"]
+}

@@ -1,0 +1,6 @@
+{
+  "name": "Clean Code",
+  "description": "Robert C. Martin's clean code principles adapted as actionable directives for AI agents",
+  "tags": ["clean-code", "naming", "functions", "formatting", "solid", "readability"],
+  "version": "1.0.0"
+}
