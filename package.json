@@ -1,6 +1,7 @@
 {
   "name": "niyam",
   "version": "0.1.0",
+  "type": "module",
   "description": "Modular AI agent rules that compose, not bloat.",
   "keywords": [
     "ai",

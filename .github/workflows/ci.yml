@@ -17,8 +17,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: ${{ matrix.node-version }}
-      - run: npm ci
-      - run: node --test "tests/**/*.test.js"
+      - run: node --test tests/cli/scanner.test.js tests/cli/composer.test.js tests/mcp/resolver.test.js tests/mcp/memory.test.js
 
   build-web:
     runs-on: ubuntu-latest
@@ -30,5 +29,5 @@ jobs:
       - name: Build web
         working-directory: web
         run: |
-          npm ci
+          npm install
           npx next build
