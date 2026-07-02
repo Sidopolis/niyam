@@ -5,7 +5,7 @@
 <h1 align="center">नियम · Niyam</h1>
 
 <p align="center">
-  <strong>Modular AI agent rules that compose, not bloat.</strong>
+  A package manager for AI agent rules.
 </p>
 
 <p align="center">
@@ -13,6 +13,7 @@
   <a href="#quick-start">Quick Start</a> ·
   <a href="#browse-rules">Browse Rules</a> ·
   <a href="#cli">CLI</a> ·
+  <a href="#mcp-server">MCP Server</a> ·
   <a href="#contributing">Contributing</a>
 </p>
 
@@ -20,184 +21,86 @@
   <img src="https://img.shields.io/npm/v/niyam?style=flat-square&color=1a1a2e" alt="npm version" />
   <img src="https://img.shields.io/github/stars/Sidopolis/niyam?style=flat-square&color=1a1a2e" alt="stars" />
   <img src="https://img.shields.io/badge/license-MIT-1a1a2e?style=flat-square" alt="license" />
-  <img src="https://img.shields.io/badge/rules-150%2B-1a1a2e?style=flat-square" alt="rules" />
+  <img src="https://img.shields.io/badge/modules-50-1a1a2e?style=flat-square" alt="modules" />
 </p>
 
 ---
 
-## The Problem
+## What is this?
 
-Static `AGENTS.md` files dump 500+ lines of context into every prompt. ETH Zurich proved this **reduces** task success by 3% and **increases costs by 20%+**. Agents perform worse with bloated context than with none.
+Niyam is a collection of 50 modular rule files for AI coding agents (Kiro, Cursor, Claude Code, Copilot, etc.), with a CLI that composes them into the right format for your tool, and an MCP server that serves rules dynamically based on what file you're editing.
 
-**Niyam fixes this.**
+The name comes from Sanskrit (नियम) and means "rules" or "principles."
 
-Instead of one massive file, Niyam gives you **modular, composable rule blocks** that you pick, combine, and scope to only what matters for your current project and task.
+### Why not just write one big AGENTS.md?
 
----
+An ETH Zurich study from February 2026 tested 138 repositories and found that large static context files reduce agent task success by about 3% while increasing inference costs by over 20%. The problem is that agents waste tokens processing rules that have nothing to do with the current task.
 
-## What is Niyam?
-
-**नियम** (Sanskrit) — *rules, discipline, principles.*
-
-A comprehensive collection of AI agent rules organized into:
-
-| Category | What it covers |
-|----------|---------------|
-| **Stacks** | Tech-specific rules (React, Next.js, Python, Go, Rust, Flutter, Vue, Angular, etc.) |
-| **Roles** | Domain expertise (Frontend, Backend, DevOps, Security, Mobile, Data, UI/UX) |
-| **Principles** | Engineering philosophy (Clean Code, TDD, DDD, Security-First, Performance, Accessibility) |
-| **Workflows** | Process rules (Git, CI/CD, Testing, Deployment, Code Review) |
-| **Templates** | Pre-built combos (Startup SaaS, Enterprise, Solo Dev, Open Source) |
-
-Each rule is a focused, independent module. Compose only what you need.
+Niyam solves this by letting you pick only what's relevant. The CLI composes your selections into a focused output, and the MCP server goes a step further by serving different rules based on which file you're actually working on.
 
 ---
 
 ## Quick Start
 
 ```bash
-# Interactive setup — scans your project, suggests rules
+# Interactive setup that scans your project and asks what you want
 npx niyam init
 
-# Or pick a template directly
+# Use a pre-configured template instead
 npx niyam init --template startup-saas
 
-# Add specific rules
+# Add individual rule modules to an existing config
 npx niyam add react typescript tdd
 
-# Generate for a specific tool
-npx niyam generate --tool kiro
+# Generate output for a specific tool
 npx niyam generate --tool cursor
-npx niyam generate --tool claude-code
 ```
 
 ---
 
-## How It Works
+## What's included
 
-```
-┌─────────────────────────────────────────────────────────┐
-│                    Your Project                          │
-├─────────────────────────────────────────────────────────┤
-│                                                         │
-│  npx niyam init                                         │
-│    │                                                    │
-│    ├── Scans package.json, Cargo.toml, go.mod, etc.    │
-│    ├── Detects your stack automatically                 │
-│    ├── Asks: What role? What principles?                │
-│    └── Generates scoped, minimal config                 │
-│                                                         │
-│  Output:                                                │
-│    .niyam/                                              │
-│    ├── config.json      # Your selections               │
-│    ├── AGENTS.md        # Composed output (minimal)     │
-│    ├── .cursorrules     # If using Cursor               │
-│    └── CLAUDE.md        # If using Claude Code          │
-│                                                         │
-└─────────────────────────────────────────────────────────┘
-```
+| Category | Count | Examples |
+|----------|-------|---------|
+| Stacks | 23 | React, Next.js, Python, Go, Rust, Flutter, Vue, Angular, Docker, AWS, Prisma, Supabase |
+| Roles | 12 | Frontend, Backend, DevOps, Security, Mobile, Architect, AI Engineer, QA, Technical Writer |
+| Principles | 6 | Clean Code, TDD, DDD, Security-First, Performance, Accessibility |
+| Workflows | 5 | Git, CI/CD, Testing, Deployment, Code Review |
+| Anti-patterns | 2 | Common mistakes, AI-generated code smells |
+| Languages | 2 | JavaScript, SQL |
 
-**Key insight:** Niyam generates the **minimum effective context** — not a dump of everything. Rules are scoped by directory, file type, and task domain.
-
----
-
-## Browse Rules
-
-### Stacks
-
-| Stack | Description | File |
-|-------|-------------|------|
-| React | Components, hooks, state, performance, patterns | [`stacks/react/`](stacks/react/) |
-| Next.js | App Router, RSC, data fetching, caching, ISR | [`stacks/nextjs/`](stacks/nextjs/) |
-| Python | Type hints, async, packaging, virtual envs | [`stacks/python/`](stacks/python/) |
-| Go | Idioms, error handling, concurrency, modules | [`stacks/go/`](stacks/go/) |
-| Rust | Ownership, lifetimes, error handling, async | [`stacks/rust/`](stacks/rust/) |
-| Flutter | Widgets, state management, platform channels | [`stacks/flutter/`](stacks/flutter/) |
-| Svelte | Runes, SvelteKit, reactivity, transitions | [`stacks/svelte/`](stacks/svelte/) |
-| Vue | Composition API, Pinia, Nuxt, reactivity | [`stacks/vue/`](stacks/vue/) |
-| Angular | Signals, standalone, RxJS, dependency injection | [`stacks/angular/`](stacks/angular/) |
-| Node.js | Streams, clustering, native modules, ESM | [`stacks/node/`](stacks/node/) |
-| TypeScript | Strict mode, generics, utility types, patterns | [`stacks/typescript/`](stacks/typescript/) |
-| Tailwind | Utility patterns, custom config, dark mode | [`stacks/tailwind/`](stacks/tailwind/) |
-| Django | ORM, views, middleware, DRF, signals | [`stacks/django/`](stacks/django/) |
-| FastAPI | Async routes, Pydantic, dependencies, middleware | [`stacks/fastapi/`](stacks/fastapi/) |
-| Laravel | Eloquent, Blade, middleware, queues, testing | [`stacks/laravel/`](stacks/laravel/) |
-
-### Roles
-
-| Role | Description | File |
-|------|-------------|------|
-| Frontend Dev | Components, accessibility, performance, responsive | [`roles/frontend/`](roles/frontend/) |
-| Backend Dev | APIs, databases, scalability, auth, caching | [`roles/backend/`](roles/backend/) |
-| Full-Stack | End-to-end, integration, system design | [`roles/fullstack/`](roles/fullstack/) |
-| DevOps | CI/CD, infrastructure, monitoring, automation | [`roles/devops/`](roles/devops/) |
-| Mobile Dev | Cross-platform, native APIs, offline, performance | [`roles/mobile/`](roles/mobile/) |
-| Security | Threat modeling, auth, encryption, OWASP | [`roles/security/`](roles/security/) |
-| Data Engineer | Pipelines, models, ETL, data quality | [`roles/data/`](roles/data/) |
-| UI/UX | Design systems, flows, usability, prototyping | [`roles/ui-ux/`](roles/ui-ux/) |
-
-### Principles
-
-| Principle | Inspired By | File |
-|-----------|------------|------|
-| Clean Code | Robert C. Martin | [`principles/clean-code/`](principles/clean-code/) |
-| TDD | Kent Beck | [`principles/tdd/`](principles/tdd/) |
-| DDD | Eric Evans | [`principles/ddd/`](principles/ddd/) |
-| Security-First | OWASP, Zero Trust | [`principles/security-first/`](principles/security-first/) |
-| Performance | Brendan Gregg, Web Vitals | [`principles/performance/`](principles/performance/) |
-| Accessibility | WCAG 2.2, WAI-ARIA | [`principles/accessibility/`](principles/accessibility/) |
-
-### Workflows
-
-| Workflow | Covers | File |
-|----------|--------|------|
-| Git | Commits, branches, PRs, conventional commits | [`workflows/git/`](workflows/git/) |
-| CI/CD | Pipelines, automation, environments, rollback | [`workflows/ci-cd/`](workflows/ci-cd/) |
-| Testing | Unit, integration, E2E, snapshot, coverage | [`workflows/testing/`](workflows/testing/) |
-| Deployment | Blue-green, canary, containers, serverless | [`workflows/deployment/`](workflows/deployment/) |
-| Code Review | Standards, checklists, automation, feedback | [`workflows/code-review/`](workflows/code-review/) |
-
-### Templates (Pre-built Combos)
-
-| Template | What you get | Command |
-|----------|-------------|---------|
-| Startup SaaS | React + Node + TDD + Speed-first | `npx niyam init --template startup-saas` |
-| Enterprise | TypeScript + Security-First + DDD + CI/CD | `npx niyam init --template enterprise` |
-| Solo Dev | Full-Stack + Clean Code + Fast shipping | `npx niyam init --template solo-dev` |
-| Open Source | Testing + Git workflows + Accessibility | `npx niyam init --template open-source` |
+Every rule module is a markdown file with 100-200 lines of specific, version-targeted guidance. Not generic advice.
 
 ---
 
 ## CLI
 
-### Installation
-
 ```bash
 npm install -g niyam
-# or use directly
-npx niyam
+# or run directly with npx
 ```
 
-### Commands
-
-| Command | Description |
+| Command | What it does |
 |---------|-------------|
-| `niyam init` | Interactive setup — scan project, pick rules, generate config |
-| `niyam add <rules...>` | Add specific rule modules |
-| `niyam remove <rules...>` | Remove rule modules |
-| `niyam list` | List all available rules |
-| `niyam generate` | Regenerate output files from current config |
-| `niyam preview` | Preview composed output before writing |
-| `niyam update` | Update rules to latest version |
-| `niyam search <query>` | Search rules by keyword |
+| `niyam init` | Scans your project, asks your preferences, writes the config |
+| `niyam add <rules>` | Subscribes to additional rule modules |
+| `niyam remove <rules>` | Removes rule modules from your config |
+| `niyam list` | Shows all 50 available modules with descriptions |
+| `niyam search <query>` | Finds rules matching a keyword |
+| `niyam generate` | Regenerates output from your current config |
+| `niyam preview` | Shows what the composed output looks like without writing it |
+| `niyam update` | Pulls latest versions of your subscribed rules from the registry |
+| `niyam publish` | Packages a custom rule module for submission to the registry |
 
-### Supported Tools
+The CLI has zero external dependencies. It auto-detects your stack by reading package.json, Cargo.toml, go.mod, pyproject.toml, Dockerfile, and other config files.
 
-| Tool | Output Format |
-|------|--------------|
+### Supported output formats
+
+| Tool | Output file |
+|------|------------|
 | Kiro CLI | `AGENTS.md` |
 | Claude Code | `CLAUDE.md` |
-| Cursor | `.cursorrules` / `.cursor/rules/` |
+| Cursor | `.cursorrules` |
 | GitHub Copilot | `AGENTS.md` |
 | Windsurf | `.windsurfrules` |
 | Codex | `AGENTS.md` |
@@ -206,61 +109,169 @@ npx niyam
 
 ---
 
-## Philosophy
+## MCP Server
 
-### Why modular?
+The MCP server is what makes Niyam different from static file generators. It runs alongside your editor and serves rules based on which file you're currently editing.
 
-The ETH Zurich study (Feb 2026) showed static context files:
-- ❌ Reduce success rates by ~3%
-- ❌ Increase inference costs by 20%+
-- ❌ Force models to process irrelevant context
+```
+src/components/Button.tsx  →  react, typescript, frontend, accessibility, clean-code
+src/api/auth.ts            →  typescript, backend, security-first, clean-code
+Dockerfile                 →  docker, devops
+prisma/schema.prisma       →  prisma, backend
+src/__tests__/user.test.ts →  typescript, testing, tdd, clean-code
+```
 
-Niyam's approach:
-- ✅ Only relevant rules for your stack/task
-- ✅ Scoped by directory (frontend rules for frontend dirs)
-- ✅ Minimal effective context — maximum signal, minimum noise
-- ✅ Compose like building blocks — add/remove as needed
+It also remembers project-specific corrections. If you tell it "we use pnpm here, not npm," it stores that and includes it in future sessions.
 
-### Design principles
+### Setup
 
-1. **Modular over monolithic** — Each rule file is independent and composable.
-2. **Scoped over global** — Rules activate based on context, not always-on.
-3. **Opinionated but optional** — Strong defaults, easy to customize.
-4. **Tool-agnostic** — Works with every AI coding tool.
-5. **Community-driven** — Open to contributions of new stacks, roles, and patterns.
+```json
+{
+  "mcpServers": {
+    "niyam": {
+      "command": "node",
+      "args": ["path/to/niyam/mcp/src/index.js"]
+    }
+  }
+}
+```
+
+### Available tools
+
+| Tool | Purpose |
+|------|---------|
+| `get_rules` | Returns rules relevant to the file you're editing |
+| `get_checklist` | Returns a verification checklist for the current context |
+| `get_context` | Returns everything (rules + learnings + checklist) in one call |
+| `add_learning` | Saves a project-specific correction for future sessions |
+| `get_learnings` | Shows all stored corrections |
+| `remove_learning` | Deletes an outdated correction |
+
+---
+
+## Registry
+
+Niyam has a built-in registry system. Rule modules have versions, and you can update them when new patterns emerge or frameworks release new versions.
+
+```bash
+# Check for updates to your subscribed rules
+npx niyam update
+
+# Publish your own rule module
+npx niyam publish stacks/my-framework
+```
+
+The registry uses version pinning (`.niyam/lock.json`) so updates are predictable and you can roll back if something breaks.
+
+---
+
+## Templates
+
+If you don't want to pick individual modules, use a template:
+
+| Template | What's in it | Command |
+|----------|-------------|---------|
+| Startup SaaS | React, Node, TypeScript, Tailwind, TDD, performance | `npx niyam init --template startup-saas` |
+| Enterprise | TypeScript, Security-First, DDD, strict CI/CD, code review | `npx niyam init --template enterprise` |
+| Solo Dev | Full-stack, clean code, minimal process overhead | `npx niyam init --template solo-dev` |
+| Open Source | Accessibility, testing, git workflows, community-friendly | `npx niyam init --template open-source` |
+
+---
+
+## How the composed output is structured
+
+When you run `niyam generate`, the output looks like this:
+
+```markdown
+<!-- Generated by Niyam v0.1.0 -->
+<!-- Modules: react, typescript, frontend, clean-code, git -->
+<!-- Regenerate: npx niyam generate -->
+
+# Project Rules (Niyam)
+
+## Active Modules
+- Stacks: react, typescript
+- Roles: frontend
+- Principles: clean-code
+- Workflows: git
+
+---
+
+## Principles
+[clean-code rules here]
+
+---
+
+## Tech Stack
+[react rules here]
+[typescript rules here]
+
+---
+
+## Role Guidelines
+[frontend rules here]
+
+---
+
+## Workflows
+[git rules here]
+```
+
+The output is ordered intentionally: principles first (universal), then stack-specific, then role-specific, then workflows. Only the modules you subscribed to appear.
 
 ---
 
 ## Contributing
 
-We welcome contributions! See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
+See [CONTRIBUTING.md](CONTRIBUTING.md) for the full guide.
 
-### Adding a new stack/role/principle:
-1. Create a directory under the appropriate category
-2. Add a `rules.md` with the actual rules content
-3. Add a `meta.json` with metadata (name, description, tags)
-4. Submit a PR
+The short version: each rule module is one folder with a `rules.md` and a `meta.json`. If you want to add support for a framework or workflow that's missing, fork the repo, add the folder, and open a PR. It usually takes about 10 minutes.
+
+---
+
+## Project structure
+
+```
+niyam/
+├── stacks/           23 tech-specific rule modules
+├── roles/            12 role-based rule modules
+├── principles/        6 engineering principle modules
+├── workflows/         5 process and workflow modules
+├── anti-patterns/     2 what-not-to-do modules
+├── languages/         2 language-specific modules
+├── templates/         4 pre-configured combos
+├── examples/          3 example project configs with generated output
+├── cli/              CLI source (zero deps, Node.js only)
+├── mcp/              MCP server source (@modelcontextprotocol/sdk)
+├── web/              Website (Next.js 16 + 21st.dev components)
+├── tests/            22 tests (Node.js native test runner)
+└── .github/          CI/CD + issue templates
+```
 
 ---
 
 ## Roadmap
 
-- [x] Core rule collection (stacks, roles, principles, workflows)
-- [x] CLI tool with project detection
-- [ ] Website with rule browser and live preview
-- [ ] VS Code extension
-- [ ] Rule analytics (which rules help most)
-- [ ] Community marketplace for custom rule packs
-- [ ] MCP server integration
+- [x] 50 rule modules across 6 categories
+- [x] CLI with init, add, remove, list, search, generate, preview, publish, update
+- [x] MCP server with context-aware rule delivery and project memory
+- [x] Website with interactive rule browser and registry page
+- [x] Registry system with version pinning
+- [x] Tests (22 passing) and CI/CD
+- [ ] Publish to npm
+- [ ] Deploy website to Vercel
+- [ ] VS Code extension for one-click rule browsing
+- [ ] Rule analytics (track which modules improve agent output)
+- [ ] Community-submitted rule packs
 
 ---
 
 ## License
 
-MIT © [Niyam Contributors](https://github.com/Sidopolis/niyam)
+MIT
 
 ---
 
 <p align="center">
-  <strong>नियम</strong> — The discipline your AI agent needs.
+  Built in India 🇮🇳
 </p>
