@@ -1,0 +1,30 @@
+@import "../tokens.css";
+@import url("https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  *, *::before, *::after { @apply box-border m-0 p-0; }
+  html { @apply overflow-x-clip scroll-smooth; scroll-padding-top: 6.5rem; }
+  h1, h2, h3 { font-family: var(--font-display); }
+  body {
+    @apply min-h-screen bg-paper font-sans text-ink antialiased leading-normal;
+    background-image:
+      linear-gradient(to right, var(--color-grid-line) 1px, transparent 1px),
+      linear-gradient(to bottom, var(--color-grid-line) 1px, transparent 1px);
+    background-size: 14px 28px;
+  }
+  a { @apply text-inherit no-underline; }
+  button { font-family: inherit; }
+}
+
+@layer utilities {
+  .section-shell {
+    @apply mx-auto w-full max-w-content px-6 md:px-10 lg:px-12;
+    padding-top: var(--space-section-y);
+    padding-bottom: var(--space-section-y);
+  }
+  .section-head { @apply mb-14 max-w-2xl md:mb-20 lg:mb-24; }
+}
