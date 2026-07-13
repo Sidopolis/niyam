@@ -5,7 +5,7 @@ import {
   useMemo,
   type ReactNode,
 } from "react";
-import { motion, type Variants } from "framer-motion";
+import { motion, type Variant, type Variants } from "framer-motion";
 import { cn } from "@/lib/utils";
 
 type AnimationT = "left" | "right" | "top" | "bottom" | "z" | "blur";
@@ -22,7 +22,7 @@ function splitText(text: string): string[] {
 
 function setStaggerDirection(
   direction: AnimationT
-): { initial: object; animate: object } {
+): { initial: Variant; animate: Variant } {
   switch (direction) {
     case "left":
       return { initial: { x: -20, opacity: 0 }, animate: { x: 0, opacity: 1 } };

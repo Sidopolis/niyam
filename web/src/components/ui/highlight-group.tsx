@@ -42,9 +42,6 @@ export function HighlightGroup({ children, className }: HighlightGroupProps) {
   const handleMouseMove = useCallback(
     (e: ReactMouseEvent<HTMLDivElement>) => {
       if (!containerRef.current) return;
-      const rect = containerRef.current.getBoundingClientRect();
-      const x = e.clientX - rect.left;
-      const y = e.clientY - rect.top;
 
       const cards = containerRef.current.querySelectorAll<HTMLElement>(
         "[data-highlight-item]"

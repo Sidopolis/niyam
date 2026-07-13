@@ -29,10 +29,9 @@ export function RibbonDitherBanner({
       <div className="absolute inset-0 pointer-events-none opacity-20">
         <Suspense fallback={null}>
           <Dithering
-            color1={ACCENT_SHADER}
-            color2="#000000"
-            warp={0.3}
-            warpShape="circle"
+            colorFront={ACCENT_SHADER}
+            colorBack="#000000"
+            shape="warp"
             type="4x4"
             style={{ width: "100%", height: "100%" }}
           />

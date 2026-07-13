@@ -34,10 +34,9 @@ export function HeroDitheringCard({
       <div className="absolute inset-0 opacity-30 pointer-events-none">
         <Suspense fallback={null}>
           <Dithering
-            color1={ACCENT_SHADER}
-            color2="#000000"
-            warp={0.4}
-            warpShape="circle"
+            colorFront={ACCENT_SHADER}
+            colorBack="#000000"
+            shape="warp"
             type="4x4"
             style={{ width: "100%", height: "100%" }}
           />

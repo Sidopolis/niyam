@@ -30,4 +30,4 @@ jobs:
         working-directory: web
         run: |
           npm install
-          npx next build
+          npm run build
